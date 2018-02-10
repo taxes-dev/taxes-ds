@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error!</title>
+    </head>
+    <body>
+{{#if error.stack}}
+<h4>{{error.status}} {{message}}</h4>
+<pre>{{error.stack}}</pre>
+{{/if}}
+    </body>
+</html>
