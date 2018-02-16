@@ -12,7 +12,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-hbs.registerPartials(path.join(__dirname, 'views', 'components'));
+hbs.registerPartials(path.join(__dirname, 'views', 'examples'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
