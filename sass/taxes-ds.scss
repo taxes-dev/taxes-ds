@@ -1,4 +1,10 @@
-@import 'components/grid';
+/***
+ * Taxes design system - root style sheet
+ */
+@charset "utf-8";
+@import "components/variables";
+@import "components/mixins";
+@import "components/grid";
 
 body {
     background: blue;

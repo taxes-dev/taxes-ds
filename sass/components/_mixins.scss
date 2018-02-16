@@ -1,0 +1,20 @@
+/***
+ * Taxes design system - mixin library
+ */
+@mixin outlines($width, $color) {
+    &.-outline {
+        border: $width solid $color;
+    }
+    &.-outline-left {
+        border-left: $width solid $color;
+    }
+    &.-outline-right {
+        border-right: $width solid $color; 
+    }
+    &.-outline-top {
+        border-top: $width solid $color;
+    }
+    &.-outline-bottom {
+        border-bottom: $width solid $color;
+    }
+}

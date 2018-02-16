@@ -1,0 +1,39 @@
+/***
+ * Super simple flexbox grid
+ *
+ * A grid container contains rows, rows contain columns. By default all columns are divided evenly.
+ * Widths can be override using span modifer, each row of columns should add up to 100% in this case.
+ */
+.txs--grid {
+    box-sizing: border-box;
+    max-width: $txs-grid-container-max-width;
+    margin: 0 auto;
+    .txs--grid__row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: $txs-grid-row-gutter;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @include outlines($txs-grid-row-outline-width, $txs-grid-row-outline-color);
+        .txs--grid__column {
+            flex-basis: 100%;
+            padding: $txs-grid-column-padding;
+            @media only screen and (min-width: $txs-grid-bp-single-column) {
+                flex: 1;
+                margin-right: $txs-grid-column-gutter;
+                &:last-child {
+                    margin-right: 0;
+                }
+                @each $percent in 20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80, 90 {
+                    &.-span-#{$percent} {
+                        flex: $percent / 10;
+                    }
+                }
+            }
+            @include outlines($txs-grid-column-outline-width, $txs-grid-column-outline-color);
+        }
+    }
+}

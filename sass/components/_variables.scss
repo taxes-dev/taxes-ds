@@ -1,0 +1,18 @@
+/*** 
+ * Taxes design system - variables
+ *
+ * Override these to customize perceptual design.
+ */
+
+/*** Breakpoints */
+$txs-grid-bp-single-column: 800px;
+
+/*** Grids */
+$txs-grid-container-max-width: 1200px;
+$txs-grid-row-outline-width: 1px;
+$txs-grid-row-outline-color: rgba(255, 255, 255, 0.7);
+$txs-grid-column-outline-width: 1px;
+$txs-grid-column-outline-color: rgba(255, 255, 255, 0.7);
+$txs-grid-row-gutter: 40px;
+$txs-grid-column-gutter: 20px;
+$txs-grid-column-padding: 10px;
