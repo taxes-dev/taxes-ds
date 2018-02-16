@@ -1,0 +1,68 @@
+/***
+ * Taxes design system - Form elements
+ *
+ * Default styling for form controls.
+ */
+
+%buttonbase, .#{$txs-namespace}--button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $txs-button-border-color;
+    background-color: $txs-button-background-color;
+    color: $txs-button-text-color;
+    font-family: $txs-button-text-font;
+    font-size: $txs-button-text-size;
+    font-weight: 700;
+    padding: $txs-button-padding;
+    border-radius: $txs-button-border-radius;
+    outline: none;
+    box-shadow: $txs-button-box-shadow;
+    &:focus {
+        background-color: $txs-button-focus-background-color;
+        border-color: $txs-button-focus-border-color;
+        color: $txs-button-focus-text-color;
+    }
+    &::-moz-focus-inner {
+        border: none;
+    }
+    &:active {
+        background-color: $txs-button-active-background-color;
+        border-color: $txs-button-active-border-color;
+        color: $txs-button-active-text-color;
+    }
+}
+.#{$txs-namespace}--button + .#{$txs-namespace}--button {
+    margin-left: $txs-button-spacing;
+}
+.#{$txs-namespace}--button.-primary {
+    @extend %buttonbase;
+    background-color: $txs-button-primary-background-color;
+    border-color: $txs-button-primary-border-color;
+    color: $txs-button-primary-text-color;
+    &:focus {
+        background-color: $txs-button-primary-focus-background-color;
+        border-color: $txs-button-primary-focus-border-color;
+        color: $txs-button-primary-focus-text-color;
+    }
+    &:active {
+        background-color: $txs-button-primary-active-background-color;
+        border-color: $txs-button-primary-active-border-color;
+        color: $txs-button-primary-active-text-color;
+    }
+}
+.#{$txs-namespace}--button.-secondary {
+    @extend %buttonbase;
+    background-color: $txs-button-secondary-background-color;
+    border-color: $txs-button-secondary-border-color;
+    color: $txs-button-secondary-text-color;
+    &:focus {
+        background-color: $txs-button-secondary-focus-background-color;
+        border-color: $txs-button-secondary-focus-border-color;
+        color: $txs-button-secondary-focus-text-color;
+    }
+    &:active {
+        background-color: $txs-button-secondary-active-background-color;
+        border-color: $txs-button-secondary-active-border-color;
+        color: $txs-button-secondary-active-text-color;
+    }
+}

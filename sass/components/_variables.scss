@@ -45,6 +45,49 @@ $txs-grid-row-gutter: 40px;
 $txs-grid-column-gutter: 20px;
 $txs-grid-column-padding: 10px;
 
+/*** Links */
+$txs-link-color: orange;
+$txs-link-color-hover: white;
+$txs-link-color-active: white;
+
+/*** Buttons */
+$txs-button-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+$txs-button-border-radius: 5px;
+$txs-button-padding: 0.5em 1em;
+$txs-button-spacing: 20px; // space between multiple buttons in the same flow
+$txs-button-text-font: $txs-body-text-font;
+$txs-button-text-size: 1rem;
+// default button
+$txs-button-background-color: transparent;
+$txs-button-border-color: rgba(255, 255, 255, 0.9);
+$txs-button-text-color: rgba(255, 255, 255, 0.9);
+$txs-button-active-background-color: rgba(255, 255, 255, 0.9);
+$txs-button-active-border-color: $txs-button-border-color;
+$txs-button-active-text-color: black;
+$txs-button-focus-background-color: $txs-button-background-color;
+$txs-button-focus-border-color: orange;
+$txs-button-focus-text-color: $txs-button-text-color;
+// primary button
+$txs-button-primary-background-color: orange;
+$txs-button-primary-border-color: orange;
+$txs-button-primary-text-color: rgba(255, 255, 255, 0.9);
+$txs-button-primary-focus-background-color: $txs-button-primary-background-color;
+$txs-button-primary-focus-border-color: rgba(255, 255, 255, 0.9);
+$txs-button-primary-focus-text-color: $txs-button-primary-text-color;
+$txs-button-primary-active-background-color: $txs-button-primary-background-color;
+$txs-button-primary-active-border-color: $txs-button-primary-border-color;
+$txs-button-primary-active-text-color: black;
+// secondary button
+$txs-button-secondary-background-color: transparent;
+$txs-button-secondary-border-color: rgba(255, 255, 255, 0.5);
+$txs-button-secondary-text-color: rgba(255, 255, 255, 0.5);
+$txs-button-secondary-focus-background-color: $txs-button-secondary-background-color;
+$txs-button-secondary-focus-border-color: rgba(255, 255, 255, 0.9);
+$txs-button-secondary-focus-text-color: $txs-button-secondary-text-color;
+$txs-button-secondary-active-background-color: transparent;
+$txs-button-secondary-active-border-color: rgba(255, 255, 255, 0.9);
+$txs-button-secondary-active-text-color: rgba(255, 255, 255, 0.9);
+
 /*** Decorative elements */
 $txs-hr-color-1: rgba(255, 255, 255, 0.3);
 $txs-hr-color-2: rgba(255, 255, 255, 0.9);

@@ -1,0 +1,15 @@
+/***
+ * Taxes design system - Hyperlinks
+ *
+ * Default styling for hyperlinks.
+ */
+.#{$txs-namespace}--a, .#{$txs-namespace}--p a, .#{$txs-namespace}--blockquote a {
+    color: $txs-link-color;
+    text-decoration: underline;
+    &:hover {
+        color: $txs-link-color-hover;
+    }
+    &:active {
+        color: $txs-link-color-active;
+    }
+}
