@@ -1,0 +1,40 @@
+.txs--grid {
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+
+    .txs--grid__row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .txs--grid__column {
+            flex-basis: 100%;
+            flex: 1;
+            &.-span-25 {
+                flex: 2.5;
+            }
+            &.-span-50 {
+                flex: 5;
+            }
+            &.-span-75 {
+                flex: 7.5;
+            }
+            &.-outline {
+                border: 1px solid #fff;
+            }
+            &.-outline-left {
+                border-left: 1px solid #fff;
+            }
+            &.-outline-right {
+                border-right: 1px solid #fff; 
+            }
+            &.-outline-top {
+                border-top: 1px solid #fff;
+            }
+            &.-outline-bottom {
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+}
