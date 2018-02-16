@@ -4,9 +4,7 @@
 @charset "utf-8";
 @import "components/variables";
 @import "components/mixins";
+@import "components/reset";
+@import "components/typography";
 @import "components/grid";
-
-body {
-    background: blue;
-    color: white;
-}
+@import "components/deco";

@@ -4,6 +4,34 @@
  * Override these to customize perceptual design.
  */
 
+/*** General */
+$txs-namespace: "txs";
+$txs-body-background-color: #0000a0;
+$txs-body-text-color: rgba(255, 255, 255, 0.9);
+
+/*** Typography */
+$txs-font-path: "../fonts"; // relative to CSS output folder
+$txs-font-use-fira-sans: true; // controls whether or not to import Fira Sans type face
+$txs-font-use-fira-mono: true; // controls whether or not to import Fira Mono type face
+$txs-body-text-font: "Fira Sans", Arial, Helvetica, sans-serif;
+$txs-body-header-font: "Fira Sans", Aria, Helvetica, sans-serif;
+$txs-body-monospace-font: "Fira Mono", monospace;
+$txs-body-text-size: 16px;
+$txs-body-text-line-height: 1.5em;
+$txs-body-padding: 1em 2em;
+$txs-h1-font-size: 3.5rem;
+$txs-h1-line-height: 1.2em;
+$txs-h2-font-size: 3rem;
+$txs-h2-line-height: 1.2em;
+$txs-h3-font-size: 2.5rem;
+$txs-h3-line-height: 1.2em;
+$txs-h4-font-size: 2rem;
+$txs-h4-line-height: 1.2em;
+$txs-h5-font-size: 1.5rem;
+$txs-h5-line-height: 1.5em;
+$txs-h6-font-size: 1rem;
+$txs-h6-line-height: 1.5em;
+
 /*** Breakpoints */
 $txs-grid-bp-single-column: 800px;
 
@@ -16,3 +44,7 @@ $txs-grid-column-outline-color: rgba(255, 255, 255, 0.7);
 $txs-grid-row-gutter: 40px;
 $txs-grid-column-gutter: 20px;
 $txs-grid-column-padding: 10px;
+
+/*** Decorative elements */
+$txs-hr-color-1: rgba(255, 255, 255, 0.3);
+$txs-hr-color-2: rgba(255, 255, 255, 0.9);

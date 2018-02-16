@@ -1,0 +1,9 @@
+/***
+ * Taxes design system - miscellaneous decorative elements
+ */
+
+.#{$txs-namespace}--hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, $txs-hr-color-1, $txs-hr-color-2, $txs-hr-color-1);
+}

@@ -1,0 +1,128 @@
+/***
+ * Taxes design system - typography
+ *
+ * Sets basis for fonts and text layout.
+ */
+@if $txs-font-use-fira-sans {
+    @font-face {
+        font-family: "Fira Sans";
+        font-weight: 400;
+        src: url($txs-font-path + "/FiraSans-Regular.woff") format("woff"), url($txs-font-path + "/FiraSans-Regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Fira Sans";
+        font-weight: 400;
+        font-style: italic;
+        src: url($txs-font-path + "/FiraSans-Italic.woff") format("woff"), url($txs-font-path + "/FiraSans-Italic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Fira Sans";
+        font-weight: 700;
+        src: url($txs-font-path + "/FiraSans-Bold.woff") format("woff"), url($txs-font-path + "/FiraSans-Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Fira Sans";
+        font-weight: 700;
+        font-style: italic;
+        src: url($txs-font-path + "/FiraSans-BoldItalic.woff") format("woff"), url($txs-font-path + "/FiraSans-BoldItalic.ttf") format("truetype");
+    }
+}
+@if $txs-font-use-fira-mono {
+    @font-face {
+        font-family: "Fira Mono";
+        font-weight: 400;
+        src: url($txs-font-path + "/FiraMono-Regular.woff") format("woff"), url($txs-font-path + "/FiraMono-Regular.ttf") format("truetype");
+    }
+}
+%copy-font {
+    font-family: $txs-body-text-font;
+    font-weight: 400;
+}
+%header-font {
+    font-family: $txs-body-header-font;
+    font-weight: 700;
+}
+%monospace-font {
+    font-family: $txs-body-monospace-font;
+    // prevent accidental pseudo-styling of monospace font
+    font-weight: 400 !important; 
+    font-style: normal !important;
+}
+body {
+    background-color: $txs-body-background-color;
+    color: $txs-body-text-color;
+    font-size: $txs-body-text-size;
+    line-height: $txs-body-text-line-height;
+    padding: $txs-body-padding;
+    @extend %copy-font;
+}
+%emphasis { font-style: italic; }
+%strong { font-weight: 700; }
+em, .#{$txs-namespace}--em, .-emphasis { @extend %emphasis; }
+strong, .#{$txs-namespace}--strong, .-strong { @extend %strong; }
+.#{$txs-namespace}--h1 {
+    font-size: $txs-h1-font-size;
+    line-height: $txs-h1-line-height;
+    @extend %header-font;
+}
+.#{$txs-namespace}--h2 {
+    font-size: $txs-h2-font-size;
+    line-height: $txs-h2-line-height;
+    @extend %header-font;
+}
+.#{$txs-namespace}--h3 {
+    font-size: $txs-h3-font-size;
+    line-height: $txs-h3-line-height;
+    @extend %header-font;
+}
+.#{$txs-namespace}--h4 {
+    font-size: $txs-h4-font-size;
+    line-height: $txs-h4-line-height;
+    @extend %header-font;
+}
+.#{$txs-namespace}--h5 {
+    font-size: $txs-h5-font-size;
+    line-height: $txs-h5-line-height;
+    @extend %header-font;
+}
+.#{$txs-namespace}--h6 {
+    font-size: $txs-h6-font-size;
+    line-height: $txs-h6-line-height;
+    @extend %header-font;
+}
+%inline-quote, .#{$txs-namespace}--q {
+    quotes: "“" "”";
+    &:before {
+        content: open-quote;
+    }
+    &:after {
+        content: close-quote;
+    }
+}
+%preformatted, .#{$txs-namespace}--tt {
+    @extend %monospace-font;
+}
+.#{$txs-namespace}--p {
+    margin: 1em 0 2em 0;
+    @extend %copy-font;
+    q {
+        @extend %inline-quote;
+    }
+    tt {
+        @extend %preformatted;
+    }
+}
+.#{$txs-namespace}--blockquote {
+    margin: 1em 2em 2em 2em;
+    @extend %emphasis;
+    @extend %copy-font;
+    q {
+        @extend %inline-quote;
+    }
+    tt {
+        @extend %preformatted;
+    }
+}
+.#{$txs-namespace}--pre {
+    @extend %preformatted;
+}

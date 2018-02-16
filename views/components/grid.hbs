@@ -1,59 +1,60 @@
 <div class="grid-example">
-    <p>The basic grid system is flexbox based. By default, you can have an arbitrary number of columns per row, and they will
+    <h1 class="txs--h1">Grid Example</h1>
+    <p class="txs--p">The basic grid system is flexbox based. By default, you can have an arbitrary number of columns per row, and they will
         be divided evenly amongst 100% width. You can use span modifiers to specify proportional widths for each column;
         in this case they must add up to 100% for each row. Grids can also be infinitely nested by placing rows within columns.
     </p>
-    <p>At smaller device breakpoints, the columns stack into a single column top to bottom instead of flowing left to right.
+    <p class="txs--p">At smaller device breakpoints, the columns stack into a single column top to bottom instead of flowing left to right.
     </p>
     <div class="txs--grid">
         <div class="txs--grid__row">
             <div class="txs--grid__column -outline">
-                <p>Column 1
+                <p class="txs--p">Column 1
                     <tt>txs--grid__column</tt>
                 </p>
             </div>
             <div class="txs--grid__column -outline">
-                <p>Column 2
+                <p class="txs--p">Column 2
                     <tt>txs--grid__column</tt>
                 </p>
             </div>
             <div class="txs--grid__column -outline">
-                <p>Column 3
+                <p class="txs--p">Column 3
                     <tt>txs--grid__column</tt>
                 </p>
             </div>
         </div>
         <div class="txs--grid__row">
             <div class="txs--grid__column -span-25 -outline">
-                <p>Column 1
+                <p class="txs--p">Column 1
                     <tt>txs--grid__column -span-25</tt>
                 </p>
             </div>
             <div class="txs--grid__column -span-75 -outline">
-                <p>Column 2
+                <p class="txs--p">Column 2
                     <tt>txs--grid__column -span-75</tt>
                 </p>
             </div>
         </div>
         <div class="txs--grid__row">
             <div class="txs--grid__column -span-33 -outline">
-                <p>Column 1
+                <p class="txs--p">Column 1
                     <tt>txs--grid__column -span-33</tt>
                 </p>
             </div>
             <div class="txs--grid__column -span-66 -outline">
-                <p>Column 2
+                <p class="txs--p">Column 2
                     <tt>txs--grid__column -span-66</tt> with nested
                     <tt>txs--grid__row</tt>
                 </p>
                 <div class="txs--grid__row">
                     <div class="txs--grid__column -outline">
-                        Column 2a
-                        <tt>txs--grid__column</tt>
+                        <p class="txs--p">Column 2a
+                        <tt>txs--grid__column</tt></p>
                     </div>
                     <div class="txs--grid__column -outline">
-                        Column 2b
-                        <tt>txs--grid__column</tt>
+                        <p class="txs--p">Column 2b
+                        <tt>txs--grid__column</tt></p>
                     </div>
                 </div>
             </div>
