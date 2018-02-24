@@ -3,7 +3,7 @@
  *
  * Default styling for hyperlinks.
  */
-.#{$txs-namespace}--a, .#{$txs-namespace}--p a, .#{$txs-namespace}--blockquote a {
+ %hyperlink {
     color: $txs-link-color;
     text-decoration: underline;
     &:hover {
@@ -12,4 +12,7 @@
     &:active {
         color: $txs-link-color-active;
     }
+ }
+.#{$txs-namespace}--a {
+    @extend %hyperlink;
 }

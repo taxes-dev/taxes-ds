@@ -1,0 +1,25 @@
+<div class="cards-example">
+    <h1 class="txs--h1">Card Component Examples</h1>
+    <p class="txs--p">Cards are components that can have multiple content types, include text, images, and links. By default they show in a single column, but
+        the example below adds the <tt>-two-up</tt> class to the container to show them side-by-side. A Handlebars partial is provided (<tt>components/card.hbs</tt>) to
+        make it easier to use.
+    </p>
+    <div class="txs--cards -two-up">
+        {{#> card}}
+            Card 1: At minimum, a card should have body content.
+        {{/card}}
+        {{#> card header="Card 2" image="images/200x200.png"}}
+            Cards can also have a header and an associated image. The image by default displays to the left.
+        {{/card}}
+        {{#> card header="Card 3" image="images/200x200.png" imageOnRight=true}}
+            But the image can also be shown on the right if desired.
+        {{/card}}
+        {{#> card header="Card 4" links=card_example_links}}
+            Cards can also have one or more links below. The <tt>links</tt> array should contain one or more objects with a <tt>url</tt> and a <tt>text</tt> given. 
+        {{/card}}
+        {{#> card header="Card 5" image="images/200x200.png" links=card_example_links_2}}
+            <strong>Of course, you can combine all of these elements into a fairly complex card.</strong>
+            Prism pinterest street art, 3 wolf moon pitchfork lo-fi cardigan humblebrag hell of pickled actually tofu meh. Cronut actually organic, fingerstache sustainable plaid brunch you probably haven't heard of them jean shorts VHS. Kale chips biodiesel freegan hoodie vinyl, vegan succulents whatever butcher swag portland typewriter bicycle rights crucifix brunch. 
+        {{/card}}
+    </div>
+</div>

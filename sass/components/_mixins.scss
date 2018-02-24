@@ -20,3 +20,22 @@
         border-bottom: $width solid $color;
     }
 }
+
+// adds common typography elements as child elements to the current selector
+@mixin typography-children() {
+    em {
+        @extend %emphasis;
+    }
+    strong {
+        @extend %strong;
+    }
+    q {
+        @extend %inline-quote;
+    }
+    tt {
+        @extend %preformatted;
+    }
+    a {
+        @extend %hyperlink;
+    }
+}

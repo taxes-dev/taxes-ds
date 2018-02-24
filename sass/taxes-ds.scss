@@ -7,6 +7,9 @@
 @import "components/reset";
 @import "components/typography";
 @import "components/links";
+// components above this line are the minimum required for the system to work
+// below this line you can pick and choose what you want
 @import "components/grid";
 @import "components/forms";
 @import "components/deco";
+@import "components/card";

@@ -1,0 +1,103 @@
+/***
+ * Taxes design system - Card component
+ *
+ * Note that this component is opinionated about its borders, you'll have to use CSS overrides rather than variables
+ * to adjust how those work.
+ */
+
+.#{$txs-namespace}--cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .#{$txs-namespace}--card {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: $txs-card-border-color-1;
+        border-image: linear-gradient(to right, $txs-card-border-color-1, $txs-card-border-color-2, $txs-card-border-color-1) 1;
+        padding: $txs-card-padding;
+        box-sizing: border-box;
+        &+.#{$txs-namespace}--card {
+            border-top-color: transparent;
+            border-image-width: 0 0 1px 0;
+        }
+        &.-image-on-right {
+            flex-direction: row-reverse;
+            & .#{$txs-namespace}--card_image+.#{$txs-namespace}--card_text {
+                padding: 0 $txs-card-padding-between-image-and-text 0 0;
+            }
+        }
+        .#{$txs-namespace}--card_image {
+            flex-basis: $txs-card-max-image-percent-of-content;
+            @media only screen and (max-width: $txs-card-bp-interior-single-column) {
+                flex-basis: 100%;
+            }
+            display: block;
+            & .#{$txs-namespace}--card_image_img {
+                max-width: 100%;
+            }
+            @media only screen and (min-width: $txs-card-bp-interior-single-column) {
+                &+.#{$txs-namespace}--card_text {
+                    flex-basis: 100% - $txs-card-max-image-percent-of-content;
+                    padding: 0 0 0 $txs-card-padding-between-image-and-text;
+                }
+            }
+        }
+        .#{$txs-namespace}--card_text {
+            flex-basis: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            .#{$txs-namespace}--card_text_header {
+                display: block;
+                @extend %header-font;
+                margin: $txs-card-header-margin;
+                font-size: $txs-card-header-font-size;
+                line-height: $txs-card-header-line-height;
+                color: $txs-card-header-text-color;
+            }
+            .#{$txs-namespace}--card_text_desc {
+                display: block;
+                @extend %copy-font;
+                @include typography-children();
+                margin: $txs-card-desc-margin;
+                font-size: $txs-card-desc-font-size;
+                line-height: $txs-card-desc-line-height;
+                color: $txs-card-desc-text-color;
+            }
+            .#{$txs-namespace}--card_text_links {
+                display: block;
+                margin: $txs-card-links-margin;
+                .#{$txs-namespace}--card_text_links_item {
+                    display: block;
+                    @extend %copy-font;
+                    margin: $txs-card-links-item-margin;
+                    font-size: $txs-card-links-item-font-size;
+                    line-height: $txs-card-links-item-line-height;
+                    a {
+                        @extend %hyperlink;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: $txs-card-bp-no-two-up) {
+        &.-two-up {
+            justify-content: space-between;
+            .#{$txs-namespace}--card {
+                flex-basis: 49%;
+                &:nth-of-type(1)+.#{$txs-namespace}--card {
+                    border-top-color: $txs-card-border-color-1;
+                    border-image-width: 1px 0;
+                }
+            }
+        }
+    }
+}

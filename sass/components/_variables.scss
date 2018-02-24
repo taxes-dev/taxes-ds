@@ -127,3 +127,24 @@ $txs-button-secondary-active-text-color: rgba(255, 255, 255, 0.9);
 /*** Decorative elements */
 $txs-hr-color-1: rgba(255, 255, 255, 0.3);
 $txs-hr-color-2: rgba(255, 255, 255, 0.9);
+
+/*** Component: Card */
+$txs-card-bp-interior-single-column: 800px;
+$txs-card-bp-no-two-up: 1100px;
+$txs-card-border-color-1: rgba(255, 255, 255, 0.3);
+$txs-card-border-color-2: rgba(255, 255, 255, 0.9);
+$txs-card-padding: 1rem 2rem;
+$txs-card-padding-between-image-and-text: 1.5rem;
+$txs-card-max-image-percent-of-content: 25%;
+$txs-card-header-margin: 0.5rem 0.5rem 0 0.5rem;
+$txs-card-header-font-size: 1.5rem;
+$txs-card-header-line-height: 2rem;
+$txs-card-header-text-color: $txs-body-text-color;
+$txs-card-desc-margin: 0 0.5rem 0.5rem 0.5rem;
+$txs-card-desc-font-size: 1rem;
+$txs-card-desc-line-height: 1.8rem;
+$txs-card-desc-text-color: $txs-body-text-color;
+$txs-card-links-margin: 0 0.5rem 0.5rem 0.5rem;
+$txs-card-links-item-margin: 0;
+$txs-card-links-item-font-size: 1rem;
+$txs-card-links-item-line-height: 2rem;
