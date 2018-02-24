@@ -1,6 +1,8 @@
 /***
  * Taxes design system - mixin library
  */
+
+// adds common border classes to block elements
 @mixin outlines($width, $color) {
     &.-outline {
         border: $width solid $color;
@@ -9,7 +11,7 @@
         border-left: $width solid $color;
     }
     &.-outline-right {
-        border-right: $width solid $color; 
+        border-right: $width solid $color;
     }
     &.-outline-top {
         border-top: $width solid $color;
