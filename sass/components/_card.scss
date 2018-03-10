@@ -62,6 +62,7 @@
                 font-size: $txs-card-header-font-size;
                 line-height: $txs-card-header-line-height;
                 color: $txs-card-header-text-color;
+                @include inverted($txs-card-header-text-color);
             }
             .#{$txs-namespace}--card_text_desc {
                 display: block;
@@ -71,6 +72,7 @@
                 font-size: $txs-card-desc-font-size;
                 line-height: $txs-card-desc-line-height;
                 color: $txs-card-desc-text-color;
+                @include inverted($txs-card-desc-text-color);
             }
             .#{$txs-namespace}--card_text_links {
                 display: block;

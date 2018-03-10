@@ -1,8 +1,12 @@
 {{#if imageOnRight}}
-<div class="txs--card -image-on-right">
+<div class="txs--card -image-on-right"
 {{else}}
-<div class="txs--card">
+<div class="txs--card"
 {{/if}}
+    {{#if backgroundImage}}
+    style="background-image: url({{backgroundImage}});"
+    {{/if}}
+    >
     {{#if image}}
     <div class="txs--card_image">
         <img class="txs--card_image_img" src="{{image}}" alt="{{header}}">
@@ -10,17 +14,17 @@
     {{/if}}
     <div class="txs--card_text">
         {{#if header}}
-        <h4 class="txs--card_text_header">{{header}}</h4>
+        <h4 class="txs--card_text_header {{#if inverted}}-inverted{{/if}}">{{header}}</h4>
         {{/if}}
-        <p class="txs--card_text_desc">{{> @partial-block }}</p>
+        <p class="txs--card_text_desc {{#if inverted}}-inverted{{/if}}">{{> @partial-block }}</p>
         {{#if links}}
         <ul class="txs--card_text_links">
             {{#each links}}
             <li class="txs--card_text_links_item">
                 {{#if newTab}}
-                <a href="{{url}}" target="_blank">{{text}}</a>
+                <a href="{{url}}" target="_blank" {{#if ../inverted}}class="-inverted"{{/if}}>{{text}}</a>
                 {{else}}
-                <a href="{{url}}">{{text}}</a>
+                <a href="{{url}}" {{#if ../inverted}}class="-inverted"{{/if}}>{{text}}</a>
                 {{/if}}
             </li>
             {{/each}}

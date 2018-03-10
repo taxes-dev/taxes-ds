@@ -2,6 +2,13 @@
  * Taxes design system - mixin library
  */
 
+// adds classes to support inverted text color
+@mixin inverted($color) {
+    &.-inverted {
+        color: invert($color);
+    }
+}
+
 // adds common border classes to block elements
 @mixin outlines($width, $color) {
     &.-outline {
