@@ -4,10 +4,23 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('hbs');
 var sass = require('node-sass-middleware');
+var concatenateJs = require('concatenate-js-middleware');
 
 var routes = require('./routes');
+var jsConfig = require('./jsConfig');
 
 var app = express();
+
+// compile JavaScript
+concatenateJs.concatenateJsAndSaveMultiple({
+  originPath: path.join(__dirname, 'public', 'scripts'),
+  destinationPath: path.join(__dirname, 'public', 'scripts'),
+  files: ['libs.js', 'taxesds.js'],
+  minify: false,
+  config: jsConfig
+}).catch((reason) => {
+  console.log(reason);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,7 +36,7 @@ app.use('/css',
         src: path.join(__dirname, 'sass'), 
         dest: path.join(__dirname, 'public', 'css')
     })
-);   
+);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // build various data for pages

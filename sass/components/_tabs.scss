@@ -1,0 +1,58 @@
+/***
+ * Taxes design system - Tabs component
+ *
+ */
+
+.#{$txs-namespace}--tabs {
+    display: block;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    .#{$txs-namespace}--tabs_headers {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: $txs-tabs-header-border-color-1;
+        border-image: linear-gradient(to right, $txs-tabs-header-border-color-1, $txs-tabs-header-border-color-2, $txs-tabs-header-border-color-1) 1;
+        @media only screen and (max-width: $txs-tabs-header-bp-single-column) {
+            flex-direction: column;
+        }
+        .#{$txs-namespace}--tabs_headers_header {
+            display: block;
+            flex-basis: 0;
+            min-width: 10%;
+            white-space: nowrap;
+            position: relative;
+            top: 1px;
+            @extend %header-font;
+            font-size: $txs-tabs-header-font-size;
+            text-align: center;
+            margin: 0;
+            padding: $txs-tabs-header-padding;
+            transition: border-bottom 0.3s ease-in-out;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            color: $txs-tabs-header-text-color;
+            &.-active {
+                color: $txs-tabs-header-active-text-color;
+                border-bottom: 5px solid $txs-tabs-header-active-border-color;
+            }
+        }
+    }
+    .#{$txs-namespace}--tabs_tabs {
+        display: block;
+        position: relative;
+        margin-top: 1rem;
+        .#{$txs-namespace}--tabs_tabs_tab {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            &.-active {
+                display: block;
+            }
+        }
+    }
+}

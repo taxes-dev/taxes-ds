@@ -31,9 +31,6 @@
         color: $txs-button-active-text-color;
     }
 }
-.#{$txs-namespace}--button + .#{$txs-namespace}--button {
-    margin-left: $txs-button-spacing;
-}
 .#{$txs-namespace}--button.-primary {
     @extend %buttonbase;
     background-color: $txs-button-primary-background-color;

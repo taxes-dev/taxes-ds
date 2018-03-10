@@ -15,5 +15,14 @@
         {{> links}}
         <hr class="txs--hr">
         {{> cards}}
+        <hr class="txs--hr">
+        {{> tabs}}
+        <script src="scripts/libs.js"></script>
+        <script src="scripts/taxesds.js"></script>
+        <script>
+            $(function() {
+                taxesTabs('.txs--tabs');
+            });
+        </script>
     </body>
 </html>
