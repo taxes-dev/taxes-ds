@@ -9,7 +9,7 @@
                 evt.stopPropagation();
             });
             $(window).on('click', function() {
-                $('.txs--nav__items', selector).removeClass('-active');
+                $('.' + TAXESDS_CSS_NAMESPACE + '--nav__items', selector).removeClass('-active');
             });
     }
 
