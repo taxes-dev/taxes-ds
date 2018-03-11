@@ -160,6 +160,7 @@ body {
     @extend %preformatted;
     font-size: $txs-pre-font-size;
     line-height: $txs-pre-line-height;
+    white-space: pre-wrap;
 }
 
 .#{$txs-namespace}--ul {
