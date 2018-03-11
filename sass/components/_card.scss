@@ -14,7 +14,7 @@
         flex-basis: 100%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         border-width: 1px 0;
         border-style: solid;
@@ -22,6 +22,13 @@
         border-image: linear-gradient(to right, $txs-card-border-color-1, $txs-card-border-color-2, $txs-card-border-color-1) 1;
         padding: $txs-card-padding;
         box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-clip: $txs-card-background-image-clip;
+        background-position: $txs-card-background-image-position;
+        background-size: $txs-card-background-image-size;
+        @media only screen and (max-width: $txs-card-bp-interior-single-column) {
+            flex-wrap: wrap;
+        }
         &+.#{$txs-namespace}--card {
             border-top-color: transparent;
             border-image-width: 0 0 1px 0;

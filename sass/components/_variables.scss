@@ -131,6 +131,9 @@ $txs-hr-color-2: rgba(255, 255, 255, 0.9);
 /*** Component: Card */
 $txs-card-bp-interior-single-column: 800px;
 $txs-card-bp-no-two-up: 1100px;
+$txs-card-background-image-clip: padding-box;
+$txs-card-background-image-position: top center;
+$txs-card-background-image-size: cover;
 $txs-card-border-color-1: rgba(255, 255, 255, 0.3);
 $txs-card-border-color-2: rgba(255, 255, 255, 0.9);
 $txs-card-padding: 1rem 2rem;
