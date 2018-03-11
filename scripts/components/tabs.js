@@ -14,7 +14,6 @@
                     current.removeClass('-active');
                 }
             });
-            evt.stopPropagation();
         });    
     }
 

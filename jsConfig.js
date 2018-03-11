@@ -6,7 +6,8 @@ var libs = [
 
 var taxesds = [
     'scripts/taxesds.js',
-    'scripts/components/tabs.js'
+    'scripts/components/tabs.js',
+    'scripts/components/nav.js'
 ];
 
 module.exports = {

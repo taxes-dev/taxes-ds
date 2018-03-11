@@ -1,0 +1,77 @@
+/***
+ * Taxes design system - Navigation component
+ *
+ */
+
+.#{$txs-namespace}--nav {
+    .#{$txs-namespace}--nav__mobile-trigger {
+        display: none;
+        @extend %header-font;
+        font-size: $txs-nav-mobile-trigger-size;
+        color: $txs-nav-mobile-text-color;
+        cursor: pointer;
+        padding: 0.5 * $txs-nav-mobile-trigger-size;
+        background-color: $txs-nav-mobile-background-color;
+        border: 3px solid $txs-nav-mobile-border-color;
+        border-radius: 1.5 * $txs-nav-mobile-trigger-size;
+        @media only screen and (max-width: $txs-nav-bp-mobile) {
+            display: block;
+            position: fixed;
+            top: $txs-nav-mobile-trigger-top;
+            left: $txs-nav-mobile-trigger-left;
+            z-index: 100;
+        }
+    }
+    .#{$txs-namespace}--nav__items {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        transition: left 0.1s ease-in, opacity 0.1s linear;
+        @media only screen and (max-width: $txs-nav-bp-mobile) {
+            flex-direction: column;
+            min-width: 50%;
+            max-width: 99vw;
+            position: fixed;
+            top: -3px;
+            z-index: 99;
+            background-color: $txs-nav-mobile-background-color;
+            border: 3px solid $txs-nav-mobile-border-color;
+            border-radius: 0 0 1rem 0;
+            max-height: 80vh;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            padding: 3 * $txs-nav-mobile-trigger-size 0 $txs-nav-item-font-size 0;
+            opacity: 0;
+            &.-active {
+                opacity: 1;
+                left: -3px !important;
+                box-shadow: $txs-nav-mobile-box-shadow;
+            }
+        }
+        .#{$txs-namespace}--nav__items__item {
+            display: block;
+            flex-basis: 0;
+            @extend %header-font;
+            font-size: $txs-nav-item-font-size;
+            margin: $txs-nav-item-margin;
+            padding: $txs-nav-item-padding;
+            text-decoration: none;
+            cursor: pointer;
+            color: $txs-nav-item-text-color;
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $txs-nav-item-hover-background-color;
+                color: $txs-nav-item-hover-text-color;
+            }
+            &::-moz-focus-inner {
+                border: none;
+            }
+            @media only screen and (max-width: $txs-nav-bp-mobile) {
+                margin: $txs-nav-mobile-item-margin;
+                padding: $txs-nav-mobile-item-padding;
+            }
+        }
+    }
+}

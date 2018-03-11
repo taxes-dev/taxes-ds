@@ -9,21 +9,24 @@
         <div class="txs--grid">
             <div class="txs--grid__row">
                 <div class="txs--grid__column"><h1 class="txs--h1">Examples</h1></div>
-                <div class="txs--grid__column">
-
-                </div>
+                <div class="txs--grid__column">{{>nav links=navigation_links}}</div>
             </div>
             <div class="txs--grid__row">
                 <div class="txs--grid__column">
                     <hr class="txs--hr">
+                    <a name="typography"></a>
                     {{> typography}}
                     <hr class="txs--hr">
+                    <a name="grid"></a>
                     {{> grid}}
                     <hr class="txs--hr">
+                    <a name="links"></a>
                     {{> links}}
                     <hr class="txs--hr">
+                    <a name="cards"></a>
                     {{> cards}}
                     <hr class="txs--hr">
+                    <a name="tabs"></a>
                     {{> tabs}}
                 </div>
             </div>
@@ -33,6 +36,7 @@
         <script>
             $(function() {
                 taxesTabs('.txs--tabs');
+                taxesMobileNav('.txs--nav');
             });
         </script>
     </body>
