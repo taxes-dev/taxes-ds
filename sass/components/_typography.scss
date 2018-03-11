@@ -165,7 +165,7 @@ body {
 .#{$txs-namespace}--ul {
     list-style-type: $txs-ul-list-style-type;
     margin: $txs-ul-margin;
-    .#{$txs-namespace}--ul_li {
+    .#{$txs-namespace}--ul__li {
         display: list-item;
         @extend %copy-font;
         font-size: $txs-ul-li-font-size;
@@ -194,7 +194,7 @@ body {
 .#{$txs-namespace}--ol {
     list-style-type: $txs-ol-list-style-type;
     margin: $txs-ol-margin;
-    .#{$txs-namespace}--ol_li {
+    .#{$txs-namespace}--ol__li {
         display: list-item;
         @extend %copy-font;
         font-size: $txs-ol-li-font-size;
@@ -223,13 +223,13 @@ body {
 
 .#{$txs-namespace}--dl {
     margin: $txs-dl-margin;
-    .#{$txs-namespace}--dl_dt {
+    .#{$txs-namespace}--dl__dt {
         margin: $txs-dl-dt-margin;
         @extend %header-font;
         font-size: $txs-dl-dt-font-size;
         line-height: $txs-dl-dt-line-height;
     }
-    .#{$txs-namespace}--dl_dd {
+    .#{$txs-namespace}--dl__dd {
         margin: $txs-dl-dd-margin;
         @extend %copy-font;
         font-size: $txs-dl-dd-font-size;

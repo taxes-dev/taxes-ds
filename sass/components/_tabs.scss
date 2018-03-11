@@ -7,7 +7,7 @@
     display: block;
     box-sizing: border-box;
     margin: 1rem 0;
-    .#{$txs-namespace}--tabs_headers {
+    .#{$txs-namespace}--tabs__headers {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -19,7 +19,7 @@
         @media only screen and (max-width: $txs-tabs-header-bp-single-column) {
             flex-direction: column;
         }
-        .#{$txs-namespace}--tabs_headers_header {
+        .#{$txs-namespace}--tabs__headers__header {
             display: block;
             flex-basis: 0;
             min-width: 10%;
@@ -41,11 +41,11 @@
             }
         }
     }
-    .#{$txs-namespace}--tabs_tabs {
+    .#{$txs-namespace}--tabs__tabs {
         display: block;
         position: relative;
         margin-top: 1rem;
-        .#{$txs-namespace}--tabs_tabs_tab {
+        .#{$txs-namespace}--tabs__tabs__tab {
             display: none;
             position: absolute;
             top: 0;

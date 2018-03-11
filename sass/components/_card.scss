@@ -28,34 +28,34 @@
         }
         &.-image-on-right {
             flex-direction: row-reverse;
-            & .#{$txs-namespace}--card_image+.#{$txs-namespace}--card_text {
+            & .#{$txs-namespace}--card__image + .#{$txs-namespace}--card__text {
                 padding: 0 $txs-card-padding-between-image-and-text 0 0;
             }
         }
-        .#{$txs-namespace}--card_image {
+        .#{$txs-namespace}--card__image {
             flex-basis: $txs-card-max-image-percent-of-content;
             @media only screen and (max-width: $txs-card-bp-interior-single-column) {
                 flex-basis: 100%;
             }
             display: block;
-            & .#{$txs-namespace}--card_image_img {
+            & .#{$txs-namespace}--card___image__img {
                 max-width: 100%;
             }
             @media only screen and (min-width: $txs-card-bp-interior-single-column) {
-                &+.#{$txs-namespace}--card_text {
+                &+.#{$txs-namespace}--card__text {
                     flex-basis: 100% - $txs-card-max-image-percent-of-content;
                     padding: 0 0 0 $txs-card-padding-between-image-and-text;
                 }
             }
         }
-        .#{$txs-namespace}--card_text {
+        .#{$txs-namespace}--card__text {
             flex-basis: 100%;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: flex-start;
             box-sizing: border-box;
-            .#{$txs-namespace}--card_text_header {
+            .#{$txs-namespace}--card__text__header {
                 display: block;
                 @extend %header-font;
                 margin: $txs-card-header-margin;
@@ -64,7 +64,7 @@
                 color: $txs-card-header-text-color;
                 @include inverted($txs-card-header-text-color);
             }
-            .#{$txs-namespace}--card_text_desc {
+            .#{$txs-namespace}--card__text__desc {
                 display: block;
                 @extend %copy-font;
                 @include typography-children();
@@ -74,10 +74,10 @@
                 color: $txs-card-desc-text-color;
                 @include inverted($txs-card-desc-text-color);
             }
-            .#{$txs-namespace}--card_text_links {
+            .#{$txs-namespace}--card__text__links {
                 display: block;
                 margin: $txs-card-links-margin;
-                .#{$txs-namespace}--card_text_links_item {
+                .#{$txs-namespace}--card__text__links__item {
                     display: block;
                     @extend %copy-font;
                     margin: $txs-card-links-item-margin;

@@ -6,17 +6,28 @@
         <link rel="stylesheet" href="/css/local.css">
     </head>
     <body>
-        <h1 class="txs--h1">Examples</h1>
-        <hr class="txs--hr">
-        {{> typography}}
-        <hr class="txs--hr">
-        {{> grid}}
-        <hr class="txs--hr">
-        {{> links}}
-        <hr class="txs--hr">
-        {{> cards}}
-        <hr class="txs--hr">
-        {{> tabs}}
+        <div class="txs--grid">
+            <div class="txs--grid__row">
+                <div class="txs--grid__column"><h1 class="txs--h1">Examples</h1></div>
+                <div class="txs--grid__column">
+
+                </div>
+            </div>
+            <div class="txs--grid__row">
+                <div class="txs--grid__column">
+                    <hr class="txs--hr">
+                    {{> typography}}
+                    <hr class="txs--hr">
+                    {{> grid}}
+                    <hr class="txs--hr">
+                    {{> links}}
+                    <hr class="txs--hr">
+                    {{> cards}}
+                    <hr class="txs--hr">
+                    {{> tabs}}
+                </div>
+            </div>
+        </div>
         <script src="scripts/libs.js"></script>
         <script src="scripts/taxesds.js"></script>
         <script>
