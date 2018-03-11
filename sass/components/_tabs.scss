@@ -35,17 +35,18 @@
             border-top: 5px solid transparent;
             border-bottom: 5px solid transparent;
             color: $txs-tabs-header-text-color;
+            cursor: pointer;
             &.-active {
                 color: $txs-tabs-header-active-text-color;
                 border-bottom: 5px solid $txs-tabs-header-active-border-color;
             }
         }
     }
-    .#{$txs-namespace}--tabs__tabs {
+    .#{$txs-namespace}--tabs__content {
         display: block;
         position: relative;
         margin-top: 1rem;
-        .#{$txs-namespace}--tabs__tabs__tab {
+        .#{$txs-namespace}--tabs__content__tab {
             display: none;
             position: absolute;
             top: 0;
