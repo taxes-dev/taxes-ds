@@ -6,6 +6,7 @@
  */
 .#{$txs-namespace}--grid {
     box-sizing: border-box;
+    min-width: $txs-grid-container-min-width;
     max-width: $txs-grid-container-max-width;
     margin: 0 auto;
     .#{$txs-namespace}--grid__row {
