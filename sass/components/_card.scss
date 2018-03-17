@@ -45,8 +45,9 @@
                 flex-basis: 100%;
             }
             display: block;
-            & .#{$txs-namespace}--card___image__img {
+            & .#{$txs-namespace}--card__image__img {
                 max-width: 100%;
+                display: block;
             }
             @media only screen and (min-width: $txs-card-bp-interior-single-column) {
                 &+.#{$txs-namespace}--card__text {
@@ -102,6 +103,7 @@
             justify-content: space-between;
             .#{$txs-namespace}--card {
                 flex-basis: 49%;
+                max-width: 49%;
                 &:nth-of-type(1)+.#{$txs-namespace}--card {
                     border-top-color: $txs-card-border-color-1;
                     border-image-width: 1px 0;
