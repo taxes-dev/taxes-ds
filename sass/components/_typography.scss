@@ -53,10 +53,10 @@
     font-style: normal !important;
 }
 
+html { font-size: $txs-body-text-size; }
 body {
     background-color: $txs-body-background-color;
     color: $txs-body-text-color;
-    font-size: $txs-body-text-size;
     line-height: $txs-body-text-line-height;
     padding: $txs-body-padding;
     @extend %copy-font;
