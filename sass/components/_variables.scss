@@ -14,8 +14,12 @@ $txs-font-path: "../fonts"; // relative to CSS output folder
 $txs-font-use-fira-sans: true; // controls whether or not to import Fira Sans type face
 $txs-font-use-fira-mono: true; // controls whether or not to import Fira Mono type face
 $txs-body-text-font: "Fira Sans", Arial, Helvetica, sans-serif;
+$txs-body-text-font-weight: 400;
+$txs-body-text-font-weight-strong: 700;
 $txs-body-header-font: "Fira Sans", Arial, Helvetica, sans-serif;
+$txs-body-header-font-weight: 700;
 $txs-body-monospace-font: "Fira Mono", monospace;
+$txs-body-monospace-font-weight: 400;
 $txs-body-text-size: 16px;
 $txs-body-text-line-height: 1.5em;
 $txs-body-padding: 1em 2em;

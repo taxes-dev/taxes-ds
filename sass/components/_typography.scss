@@ -39,17 +39,17 @@
 
 %copy-font {
     font-family: $txs-body-text-font;
-    font-weight: 400;
+    font-weight: $txs-body-text-font-weight;
 }
 
 %header-font {
     font-family: $txs-body-header-font;
-    font-weight: 700;
+    font-weight: $txs-body-header-font-weight;
 }
 
 %monospace-font {
     font-family: $txs-body-monospace-font; // prevent accidental pseudo-styling of monospace font
-    font-weight: 400 !important;
+    font-weight: $txs-body-monospace-font-weight !important;
     font-style: normal !important;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 %strong {
-    font-weight: 700;
+    font-weight: $txs-body-text-font-weight-strong;
 }
 
 .#{$txs-namespace}--em,
