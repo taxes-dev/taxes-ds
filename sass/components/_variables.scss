@@ -5,183 +5,183 @@
  */
 
 /*** General */
-$txs-namespace: "txs";
-$txs-body-background-color: #0000a0;
-$txs-body-text-color: rgba(255, 255, 255, 0.9);
+$txs-namespace: "txs" !default;
+$txs-body-background-color: #0000a0 !default;
+$txs-body-text-color: rgba(255, 255, 255, 0.9) !default;
 
 /*** Typography */
-$txs-font-path: "../fonts"; // relative to CSS output folder
-$txs-font-use-fira-sans: true; // controls whether or not to import Fira Sans type face
-$txs-font-use-fira-mono: true; // controls whether or not to import Fira Mono type face
-$txs-body-text-font: "Fira Sans", Arial, Helvetica, sans-serif;
-$txs-body-text-font-weight: 400;
-$txs-body-text-font-weight-strong: 700;
-$txs-body-header-font: "Fira Sans", Arial, Helvetica, sans-serif;
-$txs-body-header-font-weight: 700;
-$txs-body-monospace-font: "Fira Mono", monospace;
-$txs-body-monospace-font-weight: 400;
-$txs-body-text-size: 16px;
-$txs-body-text-line-height: 1.5em;
-$txs-body-padding: 1em 2em;
-$txs-h1-margin: 0.5em 0 0 0;
-$txs-h1-font-size: 3.5rem;
-$txs-h1-line-height: 1.2em;
-$txs-h2-margin: 0.4em 0 0 0;
-$txs-h2-font-size: 3rem;
-$txs-h2-line-height: 1.2em;
-$txs-h3-margin: 0.3em 0 0 0;
-$txs-h3-font-size: 2.5rem;
-$txs-h3-line-height: 1.2em;
-$txs-h4-margin: 0;
-$txs-h4-font-size: 2rem;
-$txs-h4-line-height: 1.2em;
-$txs-h5-margin: 0;
-$txs-h5-font-size: 1.5rem;
-$txs-h5-line-height: 1.5em;
-$txs-h6-margin: 0;
-$txs-h6-font-size: 1rem;
-$txs-h6-line-height: 1.5em;
-$txs-p-font-size: 1rem;
-$txs-p-line-height: 1.8rem;
-$txs-p-margin: 0 0 2em 0;
-$txs-blockquote-font-size: 1rem;
-$txs-blockquote-line-height: 1.8rem;
-$txs-blockquote-margin: 1em 2em 2em 2em;
-$txs-pre-font-size: 1rem;
-$txs-pre-line-height: 1rem;
-$txs-pre-margin: 0;
-$txs-ul-list-style-type: disc;
-$txs-ul-margin: 1em 0 2em 2em;
-$txs-ul-li-font-size: 1rem;
-$txs-ul-li-line-height: 2rem;
-$txs-ul-nested-margin: 0 0 0 2em;
-$txs-ul-nested-list-style-type: circle;
-$txs-ol-list-style-type: decimal;
-$txs-ol-margin: 1em 0 2em 2em;
-$txs-ol-li-font-size: 1rem;
-$txs-ol-li-line-height: 2rem;
-$txs-ol-nested-1-margin: 0 0 0 2em;
-$txs-ol-nested-1-list-style-type: lower-latin;
-$txs-ol-nested-2-margin: $txs-ol-nested-1-margin;
-$txs-ol-nested-2-list-style-type: lower-roman;
-$txs-dl-margin: 1em 2em 2em 2em;
-$txs-dl-dt-margin: 0;
-$txs-dl-dt-font-size: 1rem;
-$txs-dl-dt-line-height: 2rem;
-$txs-dl-dd-margin: 0 0 2em 0;
-$txs-dl-dd-font-size: 1rem;
-$txs-dl-dd-line-height: 1.8rem;
+$txs-font-path: "../fonts" !default; // relative to CSS output folder
+$txs-font-use-fira-sans: true !default; // controls whether or not to import Fira Sans type face
+$txs-font-use-fira-mono: true !default; // controls whether or not to import Fira Mono type face
+$txs-body-text-font: "Fira Sans", Arial, Helvetica, sans-serif !default;
+$txs-body-text-font-weight: 400 !default;
+$txs-body-text-font-weight-strong: 700 !default;
+$txs-body-header-font: "Fira Sans", Arial, Helvetica, sans-serif !default;
+$txs-body-header-font-weight: 700 !default;
+$txs-body-monospace-font: "Fira Mono", monospace !default;
+$txs-body-monospace-font-weight: 400 !default;
+$txs-body-text-size: 16px !default;
+$txs-body-text-line-height: 1.5em !default;
+$txs-body-padding: 1em 2em !default;
+$txs-h1-margin: 0.5em 0 0 0 !default;
+$txs-h1-font-size: 3.5rem !default;
+$txs-h1-line-height: 1.2em !default;
+$txs-h2-margin: 0.4em 0 0 0 !default;
+$txs-h2-font-size: 3rem !default;
+$txs-h2-line-height: 1.2em !default;
+$txs-h3-margin: 0.3em 0 0 0 !default;
+$txs-h3-font-size: 2.5rem !default;
+$txs-h3-line-height: 1.2em !default;
+$txs-h4-margin: 0 !default;
+$txs-h4-font-size: 2rem !default;
+$txs-h4-line-height: 1.2em !default;
+$txs-h5-margin: 0 !default;
+$txs-h5-font-size: 1.5rem !default;
+$txs-h5-line-height: 1.5em !default;
+$txs-h6-margin: 0 !default;
+$txs-h6-font-size: 1rem !default;
+$txs-h6-line-height: 1.5em !default;
+$txs-p-font-size: 1rem !default;
+$txs-p-line-height: 1.8rem !default;
+$txs-p-margin: 0 0 2em 0 !default;
+$txs-blockquote-font-size: 1rem !default;
+$txs-blockquote-line-height: 1.8rem !default;
+$txs-blockquote-margin: 1em 2em 2em 2em !default;
+$txs-pre-font-size: 1rem !default;
+$txs-pre-line-height: 1rem !default;
+$txs-pre-margin: 0 !default;
+$txs-ul-list-style-type: disc !default;
+$txs-ul-margin: 1em 0 2em 2em !default;
+$txs-ul-li-font-size: 1rem !default;
+$txs-ul-li-line-height: 2rem !default;
+$txs-ul-nested-margin: 0 0 0 2em !default;
+$txs-ul-nested-list-style-type: circle !default;
+$txs-ol-list-style-type: decimal !default;
+$txs-ol-margin: 1em 0 2em 2em !default;
+$txs-ol-li-font-size: 1rem !default;
+$txs-ol-li-line-height: 2rem !default;
+$txs-ol-nested-1-margin: 0 0 0 2em !default;
+$txs-ol-nested-1-list-style-type: lower-latin !default;
+$txs-ol-nested-2-margin: $txs-ol-nested-1-margin !default;
+$txs-ol-nested-2-list-style-type: lower-roman !default;
+$txs-dl-margin: 1em 2em 2em 2em !default;
+$txs-dl-dt-margin: 0 !default;
+$txs-dl-dt-font-size: 1rem !default;
+$txs-dl-dt-line-height: 2rem !default;
+$txs-dl-dd-margin: 0 0 2em 0 !default;
+$txs-dl-dd-font-size: 1rem !default;
+$txs-dl-dd-line-height: 1.8rem !default;
 
 /*** Breakpoints */
-$txs-grid-bp-single-column: 800px; // at this width and below, grids will stack into a single columnn
-$txs-card-bp-interior-single-column: 800px; // at this width and below, cards will show images and content in a column rather than side-by-side
-$txs-card-bp-no-two-up: 1100px; // at this width and below, the 2-up feature of cards is disabled
-$txs-tabs-header-bp-single-column: 460px; // at this width and below, tab headers will stack into a single column
-$txs-nav-bp-mobile: 900px; // at this width and below, the mobile "hamburger" menu will be used instead of a row of links
+$txs-grid-bp-single-column: 800px !default; // at this width and below, grids will stack into a single columnn
+$txs-card-bp-interior-single-column: 800px !default; // at this width and below, cards will show images and content in a column rather than side-by-side
+$txs-card-bp-no-two-up: 1100px !default; // at this width and below, the 2-up feature of cards is disabled
+$txs-tabs-header-bp-single-column: 460px !default; // at this width and below, tab headers will stack into a single column
+$txs-nav-bp-mobile: 900px !default; // at this width and below, the mobile "hamburger" menu will be used instead of a row of links
 
 /*** Grids */
-$txs-grid-container-min-width: 320px;
-$txs-grid-container-max-width: 1200px;
-$txs-grid-row-outline-width: 1px;
-$txs-grid-row-outline-color: rgba(255, 255, 255, 0.7);
-$txs-grid-column-outline-width: 1px;
-$txs-grid-column-outline-color: rgba(255, 255, 255, 0.7);
-$txs-grid-row-gutter: 40px;
-$txs-grid-column-gutter: 20px;
-$txs-grid-column-padding: 10px;
+$txs-grid-container-min-width: 320px !default;
+$txs-grid-container-max-width: 1200px !default;
+$txs-grid-row-outline-width: 1px !default;
+$txs-grid-row-outline-color: rgba(255, 255, 255, 0.7) !default;
+$txs-grid-column-outline-width: 1px !default;
+$txs-grid-column-outline-color: rgba(255, 255, 255, 0.7) !default;
+$txs-grid-row-gutter: 40px !default;
+$txs-grid-column-gutter: 20px !default;
+$txs-grid-column-padding: 10px !default;
 
 /*** Links */
-$txs-link-color: orange;
-$txs-link-color-hover: white;
-$txs-link-color-active: white;
+$txs-link-color: orange !default;
+$txs-link-color-hover: white !default;
+$txs-link-color-active: white !default;
 
 /*** Buttons */
-$txs-button-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-$txs-button-border-radius: 5px;
-$txs-button-padding: 0.5em 1em;
-$txs-button-spacing: 20px; // space between multiple buttons in the same flow
-$txs-button-text-font: $txs-body-text-font;
-$txs-button-text-size: 1rem;
+$txs-button-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3) !default;
+$txs-button-border-radius: 5px !default;
+$txs-button-padding: 0.5em 1em !default;
+$txs-button-spacing: 20px !default; // space between multiple buttons in the same flow
+$txs-button-text-font: $txs-body-text-font !default;
+$txs-button-text-size: 1rem !default;
 // default button
-$txs-button-background-color: transparent;
-$txs-button-border-color: rgba(255, 255, 255, 0.9);
-$txs-button-text-color: rgba(255, 255, 255, 0.9);
-$txs-button-active-background-color: rgba(255, 255, 255, 0.9);
-$txs-button-active-border-color: $txs-button-border-color;
-$txs-button-active-text-color: black;
-$txs-button-focus-background-color: $txs-button-background-color;
-$txs-button-focus-border-color: orange;
-$txs-button-focus-text-color: $txs-button-text-color;
+$txs-button-background-color: transparent !default;
+$txs-button-border-color: rgba(255, 255, 255, 0.9) !default;
+$txs-button-text-color: rgba(255, 255, 255, 0.9) !default;
+$txs-button-active-background-color: rgba(255, 255, 255, 0.9) !default;
+$txs-button-active-border-color: $txs-button-border-color !default;
+$txs-button-active-text-color: black !default;
+$txs-button-focus-background-color: $txs-button-background-color !default;
+$txs-button-focus-border-color: orange !default;
+$txs-button-focus-text-color: $txs-button-text-color !default;
 // primary button
-$txs-button-primary-background-color: orange;
-$txs-button-primary-border-color: orange;
-$txs-button-primary-text-color: rgba(255, 255, 255, 0.9);
-$txs-button-primary-focus-background-color: $txs-button-primary-background-color;
-$txs-button-primary-focus-border-color: rgba(255, 255, 255, 0.9);
-$txs-button-primary-focus-text-color: $txs-button-primary-text-color;
-$txs-button-primary-active-background-color: $txs-button-primary-background-color;
-$txs-button-primary-active-border-color: $txs-button-primary-border-color;
-$txs-button-primary-active-text-color: black;
+$txs-button-primary-background-color: orange !default;
+$txs-button-primary-border-color: orange !default;
+$txs-button-primary-text-color: rgba(255, 255, 255, 0.9) !default;
+$txs-button-primary-focus-background-color: $txs-button-primary-background-color !default;
+$txs-button-primary-focus-border-color: rgba(255, 255, 255, 0.9) !default;
+$txs-button-primary-focus-text-color: $txs-button-primary-text-color !default;
+$txs-button-primary-active-background-color: $txs-button-primary-background-color !default;
+$txs-button-primary-active-border-color: $txs-button-primary-border-color !default;
+$txs-button-primary-active-text-color: black !default;
 // secondary button
-$txs-button-secondary-background-color: transparent;
-$txs-button-secondary-border-color: rgba(255, 255, 255, 0.5);
-$txs-button-secondary-text-color: rgba(255, 255, 255, 0.5);
-$txs-button-secondary-focus-background-color: $txs-button-secondary-background-color;
-$txs-button-secondary-focus-border-color: rgba(255, 255, 255, 0.9);
-$txs-button-secondary-focus-text-color: $txs-button-secondary-text-color;
-$txs-button-secondary-active-background-color: transparent;
-$txs-button-secondary-active-border-color: rgba(255, 255, 255, 0.9);
-$txs-button-secondary-active-text-color: rgba(255, 255, 255, 0.9);
+$txs-button-secondary-background-color: transparent !default;
+$txs-button-secondary-border-color: rgba(255, 255, 255, 0.5) !default;
+$txs-button-secondary-text-color: rgba(255, 255, 255, 0.5) !default;
+$txs-button-secondary-focus-background-color: $txs-button-secondary-background-color !default;
+$txs-button-secondary-focus-border-color: rgba(255, 255, 255, 0.9) !default;
+$txs-button-secondary-focus-text-color: $txs-button-secondary-text-color !default;
+$txs-button-secondary-active-background-color: transparent !default;
+$txs-button-secondary-active-border-color: rgba(255, 255, 255, 0.9) !default;
+$txs-button-secondary-active-text-color: rgba(255, 255, 255, 0.9) !default;
 
 /*** Decorative elements */
-$txs-hr-color-1: rgba(255, 255, 255, 0.3);
-$txs-hr-color-2: rgba(255, 255, 255, 0.9);
+$txs-hr-color-1: rgba(255, 255, 255, 0.3) !default;
+$txs-hr-color-2: rgba(255, 255, 255, 0.9) !default;
 
 /*** Component: Card */
-$txs-card-background-image-clip: padding-box;
-$txs-card-background-image-position: top center;
-$txs-card-background-image-size: cover;
-$txs-card-border-color-1: rgba(255, 255, 255, 0.3);
-$txs-card-border-color-2: rgba(255, 255, 255, 0.9);
-$txs-card-padding: 1rem 2rem;
-$txs-card-padding-between-image-and-text: 1.5rem;
-$txs-card-max-image-percent-of-content: 25%;
-$txs-card-header-margin: 0.5rem 0.5rem 0 0.5rem;
-$txs-card-header-font-size: 1.5rem;
-$txs-card-header-line-height: 2rem;
-$txs-card-header-text-color: $txs-body-text-color;
-$txs-card-desc-margin: 0 0.5rem 0.5rem 0.5rem;
-$txs-card-desc-font-size: 1rem;
-$txs-card-desc-line-height: 1.8rem;
-$txs-card-desc-text-color: $txs-body-text-color;
-$txs-card-links-margin: 0 0.5rem 0.5rem 0.5rem;
-$txs-card-links-item-margin: 0;
-$txs-card-links-item-font-size: 1rem;
-$txs-card-links-item-line-height: 2rem;
+$txs-card-background-image-clip: padding-box !default;
+$txs-card-background-image-position: top center !default;
+$txs-card-background-image-size: cover !default;
+$txs-card-border-color-1: rgba(255, 255, 255, 0.3) !default;
+$txs-card-border-color-2: rgba(255, 255, 255, 0.9) !default;
+$txs-card-padding: 1rem 2rem !default;
+$txs-card-padding-between-image-and-text: 1.5rem !default;
+$txs-card-max-image-percent-of-content: 25% !default;
+$txs-card-header-margin: 0.5rem 0.5rem 0 0.5rem !default;
+$txs-card-header-font-size: 1.5rem !default;
+$txs-card-header-line-height: 2rem !default;
+$txs-card-header-text-color: $txs-body-text-color !default;
+$txs-card-desc-margin: 0 0.5rem 0.5rem 0.5rem !default;
+$txs-card-desc-font-size: 1rem !default;
+$txs-card-desc-line-height: 1.8rem !default;
+$txs-card-desc-text-color: $txs-body-text-color !default;
+$txs-card-links-margin: 0 0.5rem 0.5rem 0.5rem !default;
+$txs-card-links-item-margin: 0 !default;
+$txs-card-links-item-font-size: 1rem !default;
+$txs-card-links-item-line-height: 2rem !default;
 
 /*** Component: Tabs */
-$txs-tabs-header-border-color-1: rgba(255, 255, 255, 0.3);
-$txs-tabs-header-border-color-2: rgba(255, 255, 255, 0.9);
-$txs-tabs-header-font-size: 1.5rem;
-$txs-tabs-header-padding: 0.5rem 1rem;
-$txs-tabs-header-text-color: $txs-body-text-color;
-$txs-tabs-header-active-text-color: $txs-tabs-header-text-color;
-$txs-tabs-header-active-border-color: orange;
+$txs-tabs-header-border-color-1: rgba(255, 255, 255, 0.3) !default;
+$txs-tabs-header-border-color-2: rgba(255, 255, 255, 0.9) !default;
+$txs-tabs-header-font-size: 1.5rem !default;
+$txs-tabs-header-padding: 0.5rem 1rem !default;
+$txs-tabs-header-text-color: $txs-body-text-color !default;
+$txs-tabs-header-active-text-color: $txs-tabs-header-text-color !default;
+$txs-tabs-header-active-border-color: orange !default;
 
 /*** Component: Navigation */
-$txs-nav-item-font-size: 1.5rem;
-$txs-nav-item-margin: 0.5rem 0;
-$txs-nav-item-padding: 0.5rem 1rem;
-$txs-nav-item-background-color: transparent;
-$txs-nav-item-text-color: $txs-body-text-color;
-$txs-nav-item-hover-background-color: $txs-body-text-color;
-$txs-nav-item-hover-text-color: invert($txs-body-text-color);
-$txs-nav-mobile-background-color: darken($txs-body-background-color, 5%);
-$txs-nav-mobile-border-color: $txs-body-text-color;
-$txs-nav-mobile-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-$txs-nav-mobile-item-margin: $txs-nav-item-margin;
-$txs-nav-mobile-item-padding: $txs-nav-item-padding;
-$txs-nav-mobile-text-color: $txs-body-text-color;
-$txs-nav-mobile-trigger-left: 0.5rem;
-$txs-nav-mobile-trigger-top: 0.5rem;
-$txs-nav-mobile-trigger-size: 2rem;
+$txs-nav-item-font-size: 1.5rem !default;
+$txs-nav-item-margin: 0.5rem 0 !default;
+$txs-nav-item-padding: 0.5rem 1rem !default;
+$txs-nav-item-background-color: transparent !default;
+$txs-nav-item-text-color: $txs-body-text-color !default;
+$txs-nav-item-hover-background-color: $txs-body-text-color !default;
+$txs-nav-item-hover-text-color: invert($txs-body-text-color) !default;
+$txs-nav-mobile-background-color: darken($txs-body-background-color, 5%) !default;
+$txs-nav-mobile-border-color: $txs-body-text-color !default;
+$txs-nav-mobile-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) !default;
+$txs-nav-mobile-item-margin: $txs-nav-item-margin !default;
+$txs-nav-mobile-item-padding: $txs-nav-item-padding !default;
+$txs-nav-mobile-text-color: $txs-body-text-color !default;
+$txs-nav-mobile-trigger-left: 0.5rem !default;
+$txs-nav-mobile-trigger-top: 0.5rem !default;
+$txs-nav-mobile-trigger-size: 2rem !default;
